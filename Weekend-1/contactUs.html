@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="sitename">Back to Home</a>
+            <a href="contact.html" class="contact-link">Contact Us</a>
+        </div>
+    </header>
+    
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="genre">Favourite Genre:</label>
+            <input list="genres" id="genre" name="genre">
+            <datalist id="genres">
+                <option value="Fiction">
+                <option value="Non-Fiction">
+                <option value="Science Fiction">
+                <option value="Fantasy">
+                <option value="Mystery">
+                <option value="Romance">
+            </datalist>
+            
+            <label>
+                <input type="checkbox" name="subscribe"> Subscribe to our newsletter via email
+            </label>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="genre-links">
+            <h3>More Information on Genres</h3>
+            <ul>
+                <li><a href="https://www.fantasticfiction.com/" target="_blank">Fiction</a></li>
+                <li><a href="https://creativenonfiction.org/" target="_blank">Non-Fiction</a></li>
+                <li><a href="https://www.scifimind.com/blog/" target="_blank">Science Fiction</a></li>
+                <li><a href="https://fantasy.co/" target="_blank">Fantasy</a></li>
+                <li><a href="https://ladiesofmystery.com/" target="_blank">Mystery</a></li>
+                <li><a href="https://www.romance.io/" target="_blank">Romance</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>@- All rights reserved</p>
+    </footer>
+</body>
+</html>
